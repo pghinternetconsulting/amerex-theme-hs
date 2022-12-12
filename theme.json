@@ -1,0 +1,19 @@
+{
+  "label" : "Bleu Landing Page",
+  "preview_path" : "./templates/home.html",
+  "screenshot_path" : "./images/template-previews/session.png",
+  "enable_domain_stylesheets" : null,
+  "responsive_breakpoints" : [ {
+    "name" : "mobile",
+    "previewWidth" : {
+      "value" : 477,
+      "units" : "px"
+    },
+    "mediaQuery" : "@media (max-width: 767px)"
+  } ]
+}
+
+button, .button {
+    background-color: rgb(53, 116, 227, 1.0) !important;
+    border: 1px solid #3574e3 !important;
+}

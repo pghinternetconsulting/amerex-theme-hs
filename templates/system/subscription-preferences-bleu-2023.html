@@ -1,0 +1,119 @@
+<!--
+  templateType: email_subscription_preferences_page
+  isAvailableForNewContent: true
+  label: Blue 2023 - email subscription preferences
+  screenshotPath: ../../images/template-previews/subscriptions-preferences.png
+-->
+{% set template_css = '../../css/templates/email.css' %}
+{% extends '../layouts/base-no-headings.html' %}
+
+{% block body %}
+<main class="body-container-wrapper">
+  <section class="content-wrapper">
+    <div class="subs_preferences">
+    
+      <!-- IMAGE HEADER -->
+      <div class="row-fluid">
+        <div class="span12 email-center">
+          {% module "image_header"
+            path="@hubspot/linked_image",
+            offset=0,
+            width=12,
+            padding={
+              "default" : {
+                "bottom" : "10px",
+                "top" : "10px"
+              }
+            },
+            horizontal_alignment="CENTER",
+            img={
+              "alt" : "blue-logo",
+              "height" : 202,
+              "loading" : "lazy",
+              "max_height" : 105,
+              "max_width" : 600,
+              "size_type" : "auto_custom_max",
+              "src" : "https://9151534.fs1.hubspotusercontent-na1.net/hubfs/9151534/blue-logo.png",
+              "width" : 1151
+            }
+          %}
+        </div>
+      </div>
+      
+      <!--- CONTENT -->
+      <div class="row-fluid ">
+        <div class="span12 bg-1">
+          <div class="row-fluid">
+            <div class="span6">
+              <div class="bleu-header">
+                {% module_block module "bleu_header"
+                  path="@hubspot/rich_text",
+                  offset=0,
+                  width=12
+                %}
+                  {% module_attribute "html" %}
+                    <h1 class="email-prefs-title" style="font-weight: normal; font-family: Lato, sans-serif; font-size: 40px;"><span style="color: #000000;">HOW OFTEN WOULD YOU LIKE TO HEAR FROM US?</span></h1>
+                  {% end_module_attribute %}
+                {% end_module_block %}
+              </div>
+              <div>
+                {% module_block module "subscription"
+                  path="@hubspot/rich_text",
+                  offset=0,
+                  width=12
+                %}
+                  {% module_attribute "html" %}
+                    {% module 'subscription_preferences' path='@hubspot/email_subscriptions' %}
+                  {% end_module_attribute %}
+                {% end_module_block %}
+              </div>
+            </div>
+            <div class="span6">
+              {% module "image"
+                path="@hubspot/linked_image",
+                offset=0,
+                width=12,
+                horizontal_alignment="CENTER",
+                img={
+                  "alt" : "bleu-unsuscribe-image-1",
+                  "height" : 800,
+                  "loading" : "lazy",
+                  "max_height" : 800,
+                  "max_width" : 704,
+                  "size_type" : "auto",
+                  "src" : "https://9151534.fs1.hubspotusercontent-na1.net/hubfs/9151534/bleu-unsuscribe-image-1.jpg",
+                  "width" : 704
+                }
+              %}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- END CONTENT --->
+      
+      <!-- FOOTER -->
+      <div class="row-fluid">
+        <div class="span12">
+          {% module_block module "footer"
+            path="@hubspot/rich_text",
+            offset=0,
+            width=12,
+            padding={
+              "default" : {
+                "bottom" : "10px",
+                "top" : "20px"
+              }
+            }
+          %}
+            {% module_attribute "html" %}
+              <p style="text-align: center; font-size: 18px;"><em>We thank you for your patience. Please allow one week for changes to take effect.</em></p>
+            {% end_module_attribute %}
+          {% end_module_block %}
+        </div>
+      </div>
+      <!-- END FOOTER -->
+      </div>
+  </section>
+</main>
+{% endblock body %}

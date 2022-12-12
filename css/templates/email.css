@@ -1,0 +1,83 @@
+/* @import url('http://example.com/example_style.css'); */
+
+/***********************************************/
+/* CSS @imports must be at the top of the file */
+/* Add them above this section                 */
+/***********************************************/
+
+/*****************************************/
+/* Start your style declarations here    */
+/*****************************************/
+
+form {
+    background-color: transparent !important;
+    border: 0px none #d0d0d0 !important;
+    border-radius: 0px !important;
+    padding: 10px !important;
+    color: #111 !important;
+}
+
+.email-prefs .item-inner p {
+    display: none !important;
+}
+
+#email-prefs-form .page-header{
+display:none;
+}
+@media(min-width:768px){
+.row-fluid .span6 {
+    width: 50% !important;
+    margin-left: 0 !important;
+
+}
+}
+.subscribe-options .header {
+    font-weight: 600;
+    padding-top: 20px;
+}
+.email-prefs .header {
+  font-weight: 600;
+  padding-top: 20px;
+}
+.email-prefs .item {
+   padding: 5px;
+}
+.email-prefs-title {
+  padding:20px 20px 0px 20px;
+}
+
+#email-prefs-form .hs-button {
+    width: fit-content;
+}
+form input[type='submit'], form .hs-button {
+
+    background-color: #111 !important;
+    border: 0px solid #00c6ab !important;
+    border-radius: 0px !important;
+
+}
+
+/* UNSUBSCRIBE */
+
+.hs_unsubscribe_form_questions span {
+    color: #111 !important;
+}
+#hs_cos_wrapper_subscriptions_confirmation span {
+    color: #111 !important;
+}
+#hs_cos_wrapper_subscriptions_confirmation .page-header h2 {
+    font-size: 20px;
+    margin: 0px;
+}
+.hs_other span {
+    color: #111 !important;
+}
+.bleu-header{
+    background-color: rgba(225, 206, 182, 1);
+}
+.email-center{
+    text-align: center;
+}
+.bg-1{
+    background-color: rgba(242, 242, 242, 1);
+}

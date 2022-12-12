@@ -1,0 +1,9 @@
+{
+  "global" : false,
+  "master_language" : "en",
+  "icon" : "@hubspot/session/images/module-icons/dnd-file.svg",
+  "host_template_types" : [ "PAGE", "BLOG_LISTING", "BLOG_POST" ],
+  "module_id" : 44325652504,
+  "label" : "Enable drag and drop",
+  "is_available_for_new_content" : false
+}
